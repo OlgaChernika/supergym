@@ -16,8 +16,7 @@ html {
   font-weight: 400;
   font-size: $fz-default;
   line-height: 24px;
-  font-family: $ff-placeholder;
-  color: $color-default-black;
+  font-family: $ff-roboto;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -28,6 +27,7 @@ html {
 }
 
 body {
+  min-width: 320px;
   width: 100%;
   height: 100%;
 
@@ -35,6 +35,7 @@ body {
 }
 
 a {
+  display: inline-flex;
   color: $color-default-black;
   text-decoration: none;
 }
