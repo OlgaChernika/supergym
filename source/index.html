@@ -68,6 +68,189 @@
         </div>
       </section>
       <main>
+        <h1 class="visually-hidden">Фитнес-центр Supergym</h1>
+        <section class="gym">
+          <div class="gym__container container">
+            <div class="gym__text-wrapper">
+              <h2 class="gym__title title">Тренажерный зал</h2>
+              <p class="gym__text">Просторный зал площадью 900&nbsp;кв/м</p>
+              <p class="gym__description">Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+              <p class="gym__description is-hide">В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+            </div>
+            <div class="gym__image-wrapper">
+              <div class="gym__image">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/content/gym-mob.webp 1x, img/content/gym-mob@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/gym-tab.webp 1x, img/content/gym-tab@2x.webp 2x">
+                  <source type="image/webp" srcset="img/content/gym-desk.webp 1x, img/content/gym-desk@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/content/gym-mob.jpg 1x, img/content/gym-mob@2x.jpg 2x">
+                  <source media="(max-width: 1199px)" srcset="img/content/gym-tab.jpg 1x, img/content/gym-tab@2x.jpg 2x">
+                  <img src="img/content/gym-desk.jpg" srcset="img/content/gym-desk@2x.jpg 2x" alt="Тренажерный зал" width="660" height="401">
+                </picture>
+              </div>
+              <div class="gym__video video">
+                <a class="gym__video-link" href="https://www.youtube.com/watch?v=9TZXsZItgdw" target="_blank">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/video-img-mob.webp 1x, img/content/video-img-mob@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/video-img-desk.webp 1x, img/content/video-img-desk@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/content/video-img-mob.jpg 1x, img/content/video-img-mob@2x.jpg 2x">
+                    <img class="gym__video-media" src="img/content/video-img-desk.jpg" srcset="img/content/video-img-desk@2x.jpg 2x" alt="Тренажерный зал" width="364" height="228">
+                  </picture>
+                </a>
+                <button class="gym__video-button btn" type="button" aria-label="Запустить видео">
+                  <picture>
+                    <img src="img/content/play.png" srcset="img/content/play@2x.png 2x" alt="Запустить видео" width="100" height="100">
+                  </picture>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="pass" id="#pass">
+          <div class="pass__container container">
+            <div class="pass__bg">
+              <picture>
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/discs-tab.webp 1x, img/content/discs-tab@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/discs-desk.webp 1x, img/content/discs-desk@2x.webp 2x">
+                <source media="(max-width: 1199px)" srcset="img/content/discs-tab.jpg 1x, img/content/discs-tab@2x.jpg 2x">
+                <img src="img/content/discs-desk.jpg" srcset="img/content/discs-desk@2x.jpg 2x" alt="Тренажерный зал" width="287" height="494">
+              </picture>
+            </div>
+            <h2 class="pass__title title">Абонементы</h2>
+            <div class="pass__tabs tabs" data-tabs="parent" data-delay="200">
+              <div class="tabs__controls" data-tabs="controls">
+                <button class="tabs__control btn" type="button" data-tabs="control">1&nbsp;месяц</button>
+                <button class="tabs__control btn" type="button" data-tabs="control">6&nbsp;месяцев</button>
+                <button class="tabs__control btn" type="button" data-tabs="control">12&nbsp;месяцев</button>
+              </div>
+              <div class="tabs__content" data-tabs="content">
+                <ul class="tabs__element" data-tabs="element">
+                  <li class="pass__item">
+                    <div class="pass__item-wrapper">
+                      <h3 class="pass__label">С&nbsp;тренером</h3>
+                      <p class="pass__info">12&nbsp;занятий</p>
+                    </div>
+                    <span class="pass__price">5000
+                      <span class="pass__price-shadow">5000</span>
+                      <svg class="pass__icon" width="30" height="42">
+                        <use xlink:href="img/sprite_auto.svg#icon-rouble"></use>
+                      </svg>
+                    </span>
+                    <a class="pass__link btn" href="#">Купить абонемент</a>
+                  </li>
+                  <li class="pass__item">
+                    <div class="pass__item-wrapper">
+                      <h3 class="pass__label">Дневной</h3>
+                      <p class="pass__info">с&nbsp;8:00 до&nbsp;17:00</p>
+                    </div>
+                    <span class="pass__price">1700
+                      <span class="pass__price-shadow">1700</span>
+                      <svg class="pass__icon" width="30" height="42">
+                        <use xlink:href="img/sprite_auto.svg#icon-rouble"></use>
+                      </svg>
+                    </span>
+                    <a class="pass__link btn" href="#">Купить абонемент</a>
+                  </li>
+                  <li class="pass__item">
+                    <div class="pass__item-wrapper">
+                      <h3 class="pass__label">Полный день</h3>
+                      <p class="pass__info">с&nbsp;8:00 до&nbsp;22:00</p>
+                    </div>
+                    <span class="pass__price">2700
+                      <span class="pass__price-shadow">2700</span>
+                      <svg class="pass__icon" width="30" height="42">
+                        <use xlink:href="img/sprite_auto.svg#icon-rouble"></use>
+                      </svg>
+                    </span>
+                    <a class="pass__link btn" href="#">Купить абонемент</a>
+                  </li>
+                </ul>
+                <ul class="tabs__element" data-tabs="element">
+                  <li class="pass__item">
+                    <div class="pass__item-wrapper">
+                      <h3 class="pass__label">С&nbsp;тренером</h3>
+                      <p class="pass__info">72&nbsp;занятия</p>
+                    </div>
+                    <span class="pass__price">25000
+                      <span class="pass__price-shadow">25000</span>
+                      <svg class="pass__icon" width="30" height="42">
+                        <use xlink:href="img/sprite_auto.svg#icon-rouble"></use>
+                      </svg>
+                    </span>
+                    <a class="pass__link btn" href="#">Купить абонемент</a>
+                  </li>
+                  <li class="pass__item">
+                    <div class="pass__item-wrapper">
+                      <h3 class="pass__label">Дневной</h3>
+                      <p class="pass__info">с&nbsp;8:00 до&nbsp;17:00</p>
+                    </div>
+                    <span class="pass__price">8500
+                      <span class="pass__price-shadow">8500</span>
+                      <svg class="pass__icon" width="30" height="42">
+                        <use xlink:href="img/sprite_auto.svg#icon-rouble"></use>
+                      </svg>
+                    </span>
+                    <a class="pass__link btn" href="#">Купить абонемент</a>
+                  </li>
+                  <li class="pass__item">
+                    <div class="pass__item-wrapper">
+                      <h3 class="pass__label">Полный день</h3>
+                      <p class="pass__info">с&nbsp;8:00 до&nbsp;22:00</p>
+                    </div>
+                    <span class="pass__price">13500
+                      <span class="pass__price-shadow">13500</span>
+                      <svg class="pass__icon" width="30" height="42">
+                        <use xlink:href="img/sprite_auto.svg#icon-rouble"></use>
+                      </svg>
+                    </span>
+                    <a class="pass__link btn" href="#">Купить абонемент</a>
+                  </li>
+                </ul>
+                <ul class="tabs__element" data-tabs="element">
+                  <li class="pass__item">
+                    <div class="pass__item-wrapper">
+                      <h3 class="pass__label">С&nbsp;тренером</h3>
+                      <p class="pass__info">144&nbsp;занятия</p>
+                    </div>
+                    <span class="pass__price">50000
+                      <span class="pass__price-shadow">50000</span>
+                      <svg class="pass__icon" width="30" height="42">
+                        <use xlink:href="img/sprite_auto.svg#icon-rouble"></use>
+                      </svg>
+                    </span>
+                    <a class="pass__link btn" href="#">Купить абонемент</a>
+                  </li>
+                  <li class="pass__item">
+                    <div class="pass__item-wrapper">
+                      <h3 class="pass__label">Дневной</h3>
+                      <p class="pass__info">с&nbsp;8:00 до&nbsp;17:00</p>
+                    </div>
+                    <span class="pass__price">17000
+                      <span class="pass__price-shadow">17000</span>
+                      <svg class="pass__icon" width="30" height="42">
+                        <use xlink:href="img/sprite_auto.svg#icon-rouble"></use>
+                      </svg>
+                    </span>
+                    <a class="pass__link btn" href="#">Купить абонемент</a>
+                  </li>
+                  <li class="pass__item">
+                    <div class="pass__item-wrapper">
+                      <h3 class="pass__label">Полный день</h3>
+                      <p class="pass__info">с&nbsp;8:00 до&nbsp;22:00</p>
+                    </div>
+                    <span class="pass__price">27000
+                      <span class="pass__price-shadow">27000</span>
+                      <svg class="pass__icon" width="30" height="42">
+                        <use xlink:href="img/sprite_auto.svg#icon-rouble"></use>
+                      </svg>
+                    </span>
+                    <a class="pass__link btn" href="#">Купить абонемент</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
         <!-- <section class="intro">
           <div class="container">
             <h1>Тестовая страница.</h1>

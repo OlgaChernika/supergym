@@ -1,0 +1,208 @@
+.gym {
+  padding: 120px 0 235px;
+
+  @include vp-1199 {
+    padding: 99px 0 183px;
+  }
+
+  @include vp-767 {
+    padding: 69px 0 70px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    column-gap: 5%;
+
+    @include vp-1199 {
+      display: block;
+    }
+  }
+
+  &__text-wrapper {
+    padding: 0 25px 0 60px;
+    width: 38%;
+
+    @include vp-1199 {
+      width: auto;
+      padding: 0 50px;
+      margin: 0 auto 42px;
+      text-align: center;
+    }
+
+    @include vp-767 {
+      padding: 0;
+      text-align: left;
+      margin: 0 0 33px;
+    }
+  }
+
+  &__title {
+    margin: 47px 0 8px;
+    min-width: 324px;
+
+    @include vp-1199 {
+      min-width: auto;
+      margin: 0 0 9px;
+    }
+
+    @include vp-767 {
+      margin: 0 0 6px;
+    }
+  }
+
+  &__text {
+    margin: 0 0 40px;
+    font-size: 18px;
+    line-height: 27px;
+
+    @include vp-1199 {
+      margin: 0 0 35px;
+    }
+
+    @include vp-767 {
+      margin: 0 0 24px;
+    }
+  }
+
+  &__description {
+    margin: 0 0 8px;
+    font-weight: 300;
+    line-height: 24px;
+
+    @include vp-767 {
+      padding-right: 30px;
+    }
+
+    @include vp-1199 {
+      &.is-hide {
+        display: none;
+      }
+    }
+  }
+
+  &__image-wrapper {
+    position: relative;
+    align-self: flex-start;
+
+    @include vp-767 {
+      width: calc(100% + 30px);
+      margin-left: -15px;
+    }
+  }
+
+  &__image img {
+    width: 100%;
+  }
+
+  &__image {
+    @include vp-767 {
+      margin: 0 auto 40px;
+      max-width: 678px;
+    }
+  }
+
+  &__video {
+    cursor: pointer;
+    position: absolute;
+    left: -63px;
+    bottom: -115px;
+    width: 55.2%;
+    height: 56.25%;
+    background-color: $color-black-russian;
+
+    @include vp-1199 {
+      left: 50%;
+      bottom: -83px;
+      width: 39.2%;
+      height: 48.25%;
+      transform: translateX(-50%);
+    }
+
+    @include vp-767 {
+      position: relative;
+      left: unset;
+      bottom: unset;
+      transform: none;
+      margin: 0 auto;
+      width: 320px;
+      min-height: 167px;
+      height: 56.25%;
+      display: flex;
+    }
+
+    &.video--enabled {
+      .gym__video-button {
+        display: block;
+      }
+    }
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover {
+        .gym__video-link::before {
+          background-color: rgba($color-dark-cerulean, 0);
+        }
+      }
+    }
+  }
+
+  &__video-link {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    @include vp-767 {
+      min-height: 167px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba($color-dark-cerulean, 0.5);
+      z-index: 1;
+      transition: background-color $trans-default;
+    }
+  }
+
+  &__video-media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  &__video-button {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 1;
+    transition: transform $trans-default;
+    outline: none;
+    border-radius: 50%;
+    display: none;
+
+    @include vp-1199 {
+      width: 73px;
+      height: 73px;
+    }
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.1);
+      }
+    }
+  }
+}

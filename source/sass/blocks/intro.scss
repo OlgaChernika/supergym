@@ -65,6 +65,7 @@
     order: 1;
     text-shadow: 0 1px 0 $color-default-white, 0 -1px 0 $color-default-white, 1px 0 0 $color-default-white, -1px 0 0 $color-default-white, 1px 1px 0 $color-default-white, 1px -1px 0 $color-default-white, -1px 1px 0 $color-default-white, -1px -1px 0 $color-default-white, 0 2px 0 $color-default-white, 0 -2px 0 $color-default-white, 2px 0 0 $color-default-white, -2px 0 0 $color-default-white, 2px 2px 0 $color-default-white, 2px -2px 0 $color-default-white, -2px 2px 0 $color-default-white, -2px -2px 0 $color-default-white;
     letter-spacing: 0.03em;
+    color: $color-default-white;
 
     @include vp-1199 {
       margin: 0 0 30px;
