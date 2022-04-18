@@ -1085,7 +1085,6 @@ button,
 }
 
 .nav {
-  max-width: 500px;
   min-height: 44px;
   margin-left: 27px;
 }
@@ -3173,7 +3172,7 @@ button,
 
   .nav__list {
     padding: 0;
-    display: inline;
+    display: block;
     width: 100%;
     -webkit-columns: 130px 2;
     -moz-columns: 130px 2;
