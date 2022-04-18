@@ -1,5 +1,5 @@
 .trainers {
-  padding: 58px 0 80px;
+  padding: 58px 0 120px;
 
   @include vp-1199 {
     padding: 49px 0 100px;
@@ -13,21 +13,25 @@
     position: relative;
 
     @include vp-1199 {
+      max-width: 678px;
+      margin: 0 auto;
       padding: 0 56px;
     }
 
     @include vp-767 {
+      max-width: 290px;
       padding: 0 32px;
     }
   }
 
   &__title {
-    padding-left: 2px;
     margin: 0 0 52px;
+    padding-left: 2px;
 
     @include vp-1199 {
-      padding: 0;
       margin: 0 0 41px;
+      padding: 0;
+
       text-align: center;
     }
 
@@ -42,15 +46,23 @@
 
   &__list {
     display: flex;
+    min-height: 294px;
     margin: 0;
     padding: 0;
+
     list-style: none;
+
+    @include vp-1199 {
+      min-height: auto;
+    }
   }
 
   &__item {
     position: relative;
+
     min-width: 22.42%;
     overflow-y: auto;
+
     background-color: $color-spindle;
 
     @include vp-1199 {
@@ -71,6 +83,7 @@
     &:hover {
       .trainers__info-wrapper {
         display: block;
+
         animation: display 0.3s ease-out;
       }
 
@@ -84,6 +97,7 @@
     position: absolute;
     top: 0;
     left: 0;
+
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -91,24 +105,28 @@
     img {
       width: 100%;
       min-height: 100%;
+
       object-fit: cover;
     }
   }
 
   &__text {
+    position: absolute;
+    bottom: 23px;
+    left: 50%;
+    z-index: 1;
+
+    min-width: 146px;
     margin: 0;
     padding: 0 10px;
-    position: absolute;
-    left: 50%;
-    bottom: 23px;
-    min-width: 146px;
-    transform: translateX(-50%);
+
+    font-weight: 700;
     font-size: 18px;
     line-height: 27px;
-    font-weight: 700;
-    color: $color-default-white;
-    z-index: 1;
     text-align: center;
+    color: $color-default-white;
+
+    transform: translateX(-50%);
 
     @include vp-1199 {
       left: 51.5%;
@@ -116,24 +134,28 @@
   }
 
   &__info-wrapper {
-    padding: 52px 40px 39px;
-    background-color: rgba($color-sapphire, 0.89);
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
-    color: $color-default-white;
 
     display: none;
     width: 100%;
+    padding: 52px 40px 39px;
+
+    color: $color-default-white;
+
+    background-color: rgba($color-sapphire, 0.89);
+
     transition: animation $trans-default;
   }
 
   &__name {
+    margin: 0;
+
+    font-weight: 700;
     font-size: 18px;
     line-height: 27px;
-    font-weight: 700;
-    margin: 0;
     text-align: center;
 
     @include vp-1199 {
@@ -143,8 +165,9 @@
 
   &__direction {
     margin: -4px 0 33px;
-    color: $color-spindle;
+
     text-align: center;
+    color: $color-spindle;
 
     @include vp-1199 {
       padding-right: 9px;
@@ -154,37 +177,53 @@
   &__progress-list {
     margin: 0;
     padding: 0 0 0 12px;
+
     list-style: none;
     font-size: 14px;
     line-height: 21px;
   }
 
   &__progress-item {
-    padding-left: 20px;
-    margin-bottom: 13px;
     position: relative;
 
+    margin-bottom: 13px;
+    padding-left: 20px;
+
     &::before {
-      position: absolute;
       content: "";
+      position: absolute;
       top: 7px;
       left: 4px;
+
       width: 6px;
       height: 6px;
-      border-radius: 50%;
+
       background-color: $color-default-white;
+      border-radius: 50%;
     }
   }
 
   &__btn {
-    margin: 0;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     z-index: 99;
+
+    margin: 0;
+
+    transform: translateY(-50%) scale(1);
+
+    transition: transform $trans-default;
 
     @include vp-767 {
       padding: 10px;
+    }
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        transform: translateY(-50%) scale(1.5);
+        opacity: 1;
+      }
     }
 
     &--prev {
@@ -217,9 +256,10 @@
   }
 
   &__arrow {
-    fill: $color-transparent;
     width: 16px;
     height: 32px;
+
+    fill: $color-transparent;
 
     @include vp-767 {
       width: 10px;

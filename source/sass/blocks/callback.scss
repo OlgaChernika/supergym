@@ -1,0 +1,129 @@
+.callback {
+  position: relative;
+
+  width: 50%;
+  padding: 68px 100px 48px 0;
+
+  color: $color-default-white;
+
+  background-color: $color-sapphire;
+
+  @include vp-1199 {
+    width: 100%;
+    padding: 69px 86px 69px;
+  }
+
+  @include vp-767 {
+    padding: 69px 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+
+    min-width: 200vw;
+    height: 100.2%;
+
+    background-color: $color-sapphire;
+
+    @include vp-1199 {
+      right: -103px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 40px;
+
+    color: $color-default-white;
+
+    @include vp-1199 {
+      margin: 0 0 33px;
+      padding-left: 2px;
+    }
+
+    @include vp-767 {
+      margin: 0 0 36px;
+      padding-left: 0;
+    }
+  }
+
+  form {
+    display: grid;
+    max-width: 410px;
+
+    gap: 29px;
+    grid-template-columns: 1fr 1fr;
+
+    @include vp-1199 {
+      max-width: 475px;
+
+      column-gap: 12%;
+    }
+
+    @include vp-767 {
+      width: 100%;
+      max-width: 100%;
+
+      grid-template-columns: 1fr;
+      row-gap: 32px;
+    }
+  }
+
+  .is-valid {
+    border-bottom: 1px solid $color-apple;
+  }
+
+  .is-invalid {
+    border-bottom: 1px solid $color-torch-red;
+  }
+
+  input {
+    width: 100%;
+    min-height: 28px;
+
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-default-white;
+
+    background-color: $color-transparent;
+    border: none;
+    border-bottom: 1px solid $color-light-slate-grey;
+    outline: none;
+
+    &::placeholder {
+      color: $color-default-white;
+    }
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        border-bottom: 1px solid $color-default-white;
+      }
+    }
+  }
+
+  &__button {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 54px;
+    margin: 0;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    border: 3px solid $color-default-white;
+
+    grid-column: 1/-1;
+
+    @include vp-767 {
+      margin-top: 6px;
+    }
+  }
+}

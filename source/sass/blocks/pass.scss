@@ -1,5 +1,6 @@
 .pass {
   padding: 118px 0 80px;
+
   background-color: $color-ghost-white;
 
   @include vp-1199 {
@@ -17,7 +18,7 @@
   &__bg {
     position: absolute;
     right: 0;
-    bottom: -269px;
+    bottom: -229px;
 
     @include vp-1199 {
       bottom: -185px;
@@ -45,9 +46,9 @@
   }
 
   &__title {
-    padding: 0 20px;
-    margin: 0 auto 25px;
     width: fit-content;
+    margin: 0 auto 25px;
+    padding: 0 20px;
 
     @include vp-1199 {
       margin: 0 auto 20px;
@@ -59,48 +60,76 @@
   }
 
   &__item {
-    margin-bottom: 40px;
-    padding: 63px 40px 68px;
-    width: 35%;
-    background-color: $color-default-white;
-    display: grid;
-    grid-template-rows: 1fr min-content min-content;
-    text-align: center;
+    position: relative;
     z-index: 1;
 
+    display: grid;
+    width: 35%;
+    margin-bottom: 40px;
+    padding: 63px 40px 68px;
+
+    text-align: center;
+
+    background-color: $color-default-white;
+
+    grid-template-rows: 1fr min-content min-content;
+
     @include vp-1199 {
-      margin: 0 auto 40px;
       width: 442px;
+      margin: 0 auto 40px;
     }
 
     @include vp-767 {
-      margin: 0 auto 35px;
-      padding: 51px 40px 55px;
       width: 100%;
       max-width: 442px;
+      margin: 0 auto 35px;
+      padding: 51px 40px 55px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+
+      width: 100%;
+      height: 100%;
+
+      background-color: $color-default-white;
+      border: 7px solid $color-transparent;
+      border-image: linear-gradient(150.72deg, $color-crimson 17.6%, $color-smalt 95.31%);
+      border-image-slice: 1;
+      opacity: 0;
+
+      transition: opacity $trans-default;
     }
 
     @media (hover: hover), screen and (min-width: 0\0) {
       &:hover {
-        padding: 56px 33px 61px;
-        border: 7px solid $color-transparent;
-        border-image: linear-gradient(111.72deg, #d10a42 17.6%, #00359f 95.31%);
-        border-image-slice: 1;
+        &::before {
+          opacity: 1;
+        }
 
         .pass__link {
-          background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
           color: $color-default-white;
+
           border: none;
+
+          &::before {
+            opacity: 1;
+          }
         }
       }
     }
   }
 
   &__label {
+    margin: 0 0 10px;
+
     font-weight: 700;
     font-size: 26px;
     line-height: 29px;
-    margin: 0 0 10px;
 
     @include vp-767 {
       font-size: 22px;
@@ -109,21 +138,25 @@
   }
 
   &__info {
-    color: $color-chambray;
     margin: 0 0 20px;
+
+    color: $color-chambray;
   }
 
   &__price {
-    padding-top: 25px;
-    margin-bottom: 35px;
     position: relative;
+
+    margin-bottom: 35px;
+    padding-top: 25px;
+
+    font-weight: 700;
     font-size: 60px;
     line-height: 90px;
-    font-weight: 700;
     color: $color-egyptian-blue;
 
     @include vp-767 {
       margin: 0 0 31px 3px;
+
       font-size: 48px;
       line-height: 72px;
     }
@@ -143,11 +176,13 @@
     position: absolute;
     bottom: -6px;
     left: 50%;
-    transform: translateX(-50%);
-    color: rgba($color-whisper, 0.48);
+    z-index: -1;
+
     font-size: 100px;
     line-height: 150px;
-    z-index: -1;
+    color: rgba($color-whisper, 0.48);
+
+    transform: translateX(-50%);
 
     @include vp-767 {
       font-size: 80px;
@@ -156,19 +191,38 @@
   }
 
   &__link {
-    margin: 0 auto;
-    width: 206px;
-    min-height: 64px;
-    border: 2px solid $color-sapphire;
-    color: $color-sapphire;
-    font-size: 12px;
-    line-height: 14px;
-    font-weight: 700;
-    letter-spacing: 0.05em;
+    position: relative;
+
     justify-content: center;
     align-items: center;
+    width: 206px;
+    min-height: 64px;
+    margin: 0 auto;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: $color-sapphire;
     text-transform: uppercase;
+    letter-spacing: 0.05em;
+
     background: $color-transparent;
-    transition: background $trans-default;
+    border: 2px solid $color-sapphire;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+
+      width: 100%;
+      height: 100%;
+
+      background: linear-gradient(97.05deg, $color-torch-red 17.6%, $color-cobalt-mod 95.31%);
+      opacity: 0;
+
+      transition: opacity $trans-default;
+    }
   }
 }

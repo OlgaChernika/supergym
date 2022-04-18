@@ -1,0 +1,121 @@
+.contacts {
+  width: 50%;
+  padding: 69px 0 48px 120px;
+
+  @include vp-1199 {
+    width: 100%;
+    padding: 69px 84px 43px;
+  }
+
+  @include vp-767 {
+    padding: 69px 0 43px;
+  }
+
+  &__title {
+    margin: 0 0 42px;
+
+    @include vp-1199 {
+      margin: 0 0 33px;
+      padding-left: 4px;
+    }
+
+    @include vp-767 {
+      margin: 0 0 35px;
+      padding-left: 0;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    column-gap: 20%;
+  }
+
+  &__list {
+    width: 36.5%;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    @include vp-1199 {
+      width: 37.9%;
+    }
+
+    @include vp-767 {
+      width: 100%;
+    }
+
+    &:first-of-type {
+      position: relative;
+
+      padding: 0 0 0 4px;
+
+      @include vp-767 {
+        padding: 0;
+
+        &::before {
+          display: none;
+        }
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 44%;
+        right: -40%;
+
+        width: 1px;
+        height: 78%;
+
+        background-color: $color-light-slate-grey;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &__item {
+    margin-bottom: 17px;
+
+    @include vp-1199 {
+      margin-bottom: 19px;
+    }
+  }
+
+  &__item-title {
+    margin: 0 0 3px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+    @include vp-1199 {
+      margin: 0 0 6px;
+
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 21px;
+
+    @include vp-1199 {
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    &:first-of-type {
+      min-width: 170px;
+
+      @include vp-1199 {
+        min-width: 218px;
+      }
+    }
+  }
+}

@@ -19,8 +19,8 @@
       <section class="intro">
         <header class="header" id="header">
           <div class="header__container container">
-            <a>
-              <svg class="header__logo" width="89" height="20">
+            <a class="header__logo">
+              <svg width="89" height="20">
                 <use xlink:href="img/sprite_auto.svg#logo"></use>
               </svg>
             </a>
@@ -53,15 +53,15 @@
             </picture>
           </div>
           <div class="intro__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link" href="#" target="_blank" aria-label="Наша страница на Facebook">Fb</a>
+            <ul class="intro__social-list">
+              <li class="intro__social-item">
+                <a class="intro__social-link" href="#" target="_blank" aria-label="Наша страница на Facebook">Fb</a>
               </li>
-              <li class="social__item">
-                <a class="social__link" href="#" target="_blank" aria-label="Наша страница в Vk">Vk</a
+              <li class="intro__social-item">
+                <a class="intro__social-link" href="#" target="_blank" aria-label="Наша страница в Vk">Vk</a
                   ></li>
-              <li class="social__item">
-                <a class="social__link" href="#" target="_blank" aria-label="Наша страница в Instagram">Ig</a>
+              <li class="intro__social-item">
+                <a class="intro__social-link" href="#" target="_blank" aria-label="Наша страница в Instagram">Ig</a>
               </li>
             </ul>
           </div>
@@ -106,7 +106,7 @@
             </div>
           </div>
         </section>
-        <section class="pass" id="#pass">
+        <section class="pass" id="pass">
           <div class="pass__container container">
             <div class="pass__bg">
               <picture>
@@ -289,7 +289,7 @@
           <div class="trainers__container container">
             <h2 class="trainers__title title">Тренеры</h2>
             <div class="trainers__wrapper">
-              <div class="trainers__swiper swiper">
+              <div class="trainers__swiper swiper-trainers">
                 <ul class="trainers__list swiper-wrapper">
                   <li class="trainers__item swiper-slide">
                     <p class="trainers__text">Анна Павлова</p>
@@ -460,52 +460,230 @@
             </div>
           </div>
         </section>
-        <!-- <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+        <section class="advantages">
+          <div class="advantages__container container">
+            <h2 class="advantages__title title">Наши преимущества</h2>
+            <ul class="advantages__list">
+              <li class="advantages__item advantages__item--static">
+                <div class="advantages__text-wrapper">
+                  <h3 class="advantages__item-title"><span>100</span> Тренажеров</h3>
+                  <p class="advantages__text">Современные тренажеры на&nbsp;все группы мышц</p>
+                </div>
+              </li>
+              <li class="advantages__item">
+                <div class="advantages__text-wrapper">
+                  <h3 class="advantages__item-title">Площадь </h3>
+                  <p class="advantages__text">Занимайтесь без очередей и&nbsp;толпучки</p>
+                </div>
+                <dl class="advantages__numbers advantages__numbers--second">
+                  <dt>900</dt>
+                  <dd>кв/м</dd>
+                </dl>
+              </li>
+              <li class="advantages__item">
+                <div class="advantages__text-wrapper">
+                  <h3 class="advantages__item-title">Собственная парковка</h3>
+                  <p class="advantages__text">Вы&nbsp;всегда найдете место для своей&nbsp;машины на&nbsp;нашей парковке</p>
+                </div>
+                <dl class="advantages__numbers">
+                  <dt>70</dt>
+                  <dd>машин</dd>
+                </dl>
+              </li>
+              <li class="advantages__item">
+                <div class="advantages__text-wrapper">
+                  <h3 class="advantages__item-title">Комфорт</h3>
+                  <p class="advantages__text">Просторные раздевалки, душевые,&nbsp;фен, Wi-Fi, кулеры</p>
+                </div>
+                <dl class="advantages__numbers">
+                  <dt>350</dt>
+                  <dd>мест</dd>
+                </dl>
+              </li>
+              <li class="advantages__item">
+                <div class="advantages__text-wrapper">
+                  <h3 class="advantages__item-title">Тренерский опыт</h3>
+                  <p class="advantages__text">Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером</p>
+                </div>
+                <dl class="advantages__numbers">
+                  <dt>5+</dt>
+                  <dd>лет</dd>
+                </dl>
+              </li>
+            </ul>
           </div>
-        </section> -->
+        </section>
+        <section class="sale" id="sale">
+          <div class="sale__container container">
+            <h2 class="sale__title title">Акции</h2>
+            <ul class="sale__list">
+              <li class="sale__wrapper">
+                <div class="sale__promo-wrapper">
+                  <div class="sale__promo">
+                    <div class="sale__promo-text">
+                      <p class="sale__offer">Год <span class="sale__price">4999</span></p>
+                      <p class="sale__description">Безлимитный абонемент в&nbsp;тренажерный зал</p>
+                    </div>
+                    <a class="sale__link btn" href="#">Подробнее</a>
+                  </div>
+                  <div class="sale__image">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/content/promo-mob.webp 1x, img/content/promo-mob@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/promo-tab.webp 1x, img/content/promo-tab@2x.webp 2x">
+                      <source type="image/webp" srcset="img/content/promo-desk.webp 1x, img/content/promo-desk@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/content/promo-mob.jpg 1x, img/content/promo-mob@2x.jpg 2x">
+                      <source media="(max-width: 1199px)" srcset="img/content/promo-tab.jpg 1x, img/content/promo-tab@2x.jpg 2x">
+                      <img src="img/content/promo-desk.jpg" alt="Акции" srcset="img/content/promo-desk@2x.jpg 2x" width="280" height="462">
+                    </picture>
+                  </div>
+                </div>
+              </li>
+              <li class="sale__item">
+                <div>
+                  <h3 class="sale__item-offer">Месяц бесплатно</h3>
+                  <p class="sale__info">Приведи друга, получи абонемент&nbsp;в&nbsp;подарок</p>
+                </div>
+                <a class="sale__link btn" href="#">Подробнее</a>
+              </li>
+              <li class="sale__item">
+                <div>
+                  <h3 class="sale__item-offer">Скидка 20%</h3>
+                  <p class="sale__info">Корпоративный фитнес с&nbsp;командой</p>
+                </div>
+                <a class="sale__link btn" href="">Подробнее</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="reviews">
+          <div class="reviews__container container">
+            <h2 class="reviews__title title">Отзывы</h2>
+            <div class="reviews__wrapper">
+              <div class="reviews__swiper swiper-reviews">
+                <ul class="reviews__list swiper-wrapper">
+                  <li class="reviews__item swiper-slide">
+                    <h3 class="reviews__author">Анна Орлова</h3>
+                    <div class="reviews__userpic">
+                      <picture>
+                        <source type="image/webp" srcset="img/content/userpic-desk.webp 1x, img/content/userpic-desk@2x.webp 2x">
+                        <img src="img/content/userpic-desk.png" alt="Анна Орлова" srcset="img/content/userpic-desk@2x.png 2x" width="80" height="80">
+                      </picture>
+                    </div>
+                    <p class="reviews__text">&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                  </li>
+                  <li class="reviews__item swiper-slide">
+                    <h3 class="reviews__author">Анна Орлова</h3>
+                    <div class="reviews__userpic">
+                      <picture>
+                        <source type="image/webp" srcset="img/content/userpic-desk.webp 1x, img/content/userpic-desk@2x.webp 2x">
+                        <img src="img/content/userpic-desk.png" alt="Анна Орлова" srcset="img/content/userpic-desk@2x.png 2x" width="80" height="80">
+                      </picture>
+                    </div>
+                    <p class="reviews__text">&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                  </li>
+                </ul>
+              </div>
+              <button class="reviews__btn reviews__btn--prev swiper-button-prev btn" type="button" aria-label="Предыдущий слайд">
+                <svg class="trainers__arrow" width="16" height="32">
+                  <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <button class="reviews__btn reviews__btn--next swiper-button-next btn" type="button" aria-label="Следующий слайд">
+                <svg class="trainers__arrow" width="16" height="32">
+                  <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+        <div class="bottom-wrapper container">
+          <section class="callback">
+            <h2 class="callback__title title">Бесплатное занятие</h2>
+            <div data-validate>
+              <form action="https://echo.htmlacademy.ru/" method="POST" id="callback-form">
+                <label for="user-name" data-validate-type="text" data-limitations="letters">
+                  <input type="text" name="user-name" id="user-name" maxlength="100" placeholder="Имя" required>
+                </label>
+                <label for="user-phone" data-validate-type="phone">
+                  <input type="tel" name="user-phone" id="user-phone" placeholder="Телефон" required>
+                </label>
+                <button class="callback__button btn" type="submit">Отправить</button>
+              </form>
+            </div>
+          </section>
+          <section class="contacts">
+            <h2 class="contacts__title title">Контакты</h2>
+            <div class="contacts__wrapper">
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <h3 class="contacts__item-title">Адрес:</h3>
+                  <p class="contacts__text">г. Омск, ул.&nbsp;60&nbsp;лет Октября,&nbsp;7</p>
+                </li>
+                <li class="contacts__item">
+                  <h3 class="contacts__item-title">График работы:</h3>
+                  <p class="contacts__text">Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</p>
+                </li>
+              </ul>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <h3 class="contacts__item-title">Телефон:</h3>
+                  <p class="contacts__text">8-800-555-55-55</p>
+                </li>
+                <li class="contacts__item">
+                  <h3 class="contacts__item-title">Email:</h3>
+                  <p class="contacts__text">omsk@supergym.ru</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
       </main>
       <footer class="footer">
         <div class="footer__container container">
-          <a class="footer__logo" href="#header">
+          <a class="footer__logo" href="#header" data-anchor>
             <svg class="header__logo" width="89" height="20">
               <use xlink:href="img/sprite_auto.svg#logo"></use>
             </svg>
           </a>
           <nav class="footer__nav nav">
             <ul class="nav__list">
-              <li class="nav__item"><a class="nav__link" href="#">Услуги</a></li>
-              <li class="nav__item"><a class="nav__link" href="#pass" data-anchor>Абонементы</a></li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Услуги</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#pass" data-anchor>Абонементы</a>
+              </li>
             </ul>
             <ul class="nav__list">
-              <li class="nav__item"><a class="nav__link" href="#promo" data-anchor>Акции</a></li>
-              <li class="nav__item"><a class="nav__link" href="#trainers" data-anchor>Тренеры</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">Расписание</a></li>
+              <li class="nav__item">
+                <a class="nav__link" href="#sale" data-anchor>Акции</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#trainers" data-anchor>Тренеры</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Расписание</a>
+              </li>
             </ul>
           </nav>
           <div class="footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a href="#" target="_blank" aria-label="Наша страница в Vk">
+                <a class="social__link" href="#" target="_blank" aria-label="Наша страница в Vk">
                   <svg class="social__icon social__icon--vk" width="24" height="13">
                     <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a href="#" target="_blank" aria-label="Наша страница в Instagram">
+                <a class="social__link" href="#" target="_blank" aria-label="Наша страница в Instagram">
                   <svg class="social__icon social__icon--inst" width="24" height="24">
                     <use xlink:href="img/sprite_auto.svg#icon-insta"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a href="#" target="_blank" aria-label="Наша страница на Facebook">
+                <a class="social__link" href="#" target="_blank" aria-label="Наша страница на Facebook">
                   <svg class="social__icon social__icon--fb" width="12" height="24">
                     <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
                   </svg>
@@ -516,36 +694,6 @@
         </div>
       </footer>
     </div>
-
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

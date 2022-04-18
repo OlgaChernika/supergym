@@ -1,0 +1,27 @@
+.bottom-wrapper {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 1px;
+
+    background-color: $color-light-slate-grey;
+
+    @include vp-1199 {
+      display: none;
+    }
+  }
+
+  @include vp-1199 {
+    flex-direction: column;
+    overflow: hidden;
+  }
+}

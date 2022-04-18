@@ -1,10 +1,10 @@
 .title {
-  font-family: $ff-bebas;
   font-weight: 700;
   font-size: 49px;
   line-height: 49px;
-  letter-spacing: 0.03em;
+  font-family: $ff-bebas;
   color: $color-sapphire;
+  letter-spacing: 0.03em;
 
   @include vp-1199 {
     font-size: 42px;

@@ -1,15 +1,19 @@
 .intro {
   padding-bottom: 51px;
-  background: $conic-gradient-desk;
+
   color: $color-default-white;
+
+  background: $conic-gradient-desk;
 
   @include vp-1199 {
     padding-bottom: 81px;
+
     background: $conic-gradient-tab;
   }
 
   @include vp-767 {
     padding-bottom: 68px;
+
     background: $conic-gradient-mob;
   }
 
@@ -18,8 +22,8 @@
   }
 
   &__image {
-    margin-top: -36px;
     width: auto;
+    margin-top: -36px;
 
     @include vp-1339 {
       margin-top: -20px;
@@ -35,20 +39,22 @@
   }
 
   &__wrapper {
-    margin: 75px 64px 0 10px;
+    z-index: 1;
+
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     align-self: flex-start;
+    margin: 75px 64px 0 10px;
+
     text-align: right;
-    z-index: 1;
 
     @include vp-1199 {
       margin: 50px 29px 0 0;
     }
 
     @include vp-767 {
-      margin: 49px 0 0;
+      margin: 49px auto 0;
     }
   }
 
@@ -57,24 +63,27 @@
   }
 
   &__title {
-    font-size: 109px;
-    line-height: 109px;
-    margin: 0 0 46px;
+    order: 1;
     width: min-content;
     max-width: 400px;
-    order: 1;
-    text-shadow: 0 1px 0 $color-default-white, 0 -1px 0 $color-default-white, 1px 0 0 $color-default-white, -1px 0 0 $color-default-white, 1px 1px 0 $color-default-white, 1px -1px 0 $color-default-white, -1px 1px 0 $color-default-white, -1px -1px 0 $color-default-white, 0 2px 0 $color-default-white, 0 -2px 0 $color-default-white, 2px 0 0 $color-default-white, -2px 0 0 $color-default-white, 2px 2px 0 $color-default-white, 2px -2px 0 $color-default-white, -2px 2px 0 $color-default-white, -2px -2px 0 $color-default-white;
-    letter-spacing: 0.03em;
+    margin: 0 0 46px;
+
+    font-size: 109px;
+    line-height: 109px;
     color: $color-default-white;
+    letter-spacing: 0.03em;
+    text-shadow: 0 1px 0 $color-default-white, 0 -1px 0 $color-default-white, 1px 0 0 $color-default-white, -1px 0 0 $color-default-white, 1px 1px 0 $color-default-white, 1px -1px 0 $color-default-white, -1px 1px 0 $color-default-white, -1px -1px 0 $color-default-white, 0 2px 0 $color-default-white, 0 -2px 0 $color-default-white, 2px 0 0 $color-default-white, -2px 0 0 $color-default-white, 2px 2px 0 $color-default-white, 2px -2px 0 $color-default-white, -2px 2px 0 $color-default-white, -2px -2px 0 $color-default-white;
 
     @include vp-1199 {
       margin: 0 0 30px;
+
       font-size: 86px;
       line-height: 86px;
     }
 
     @include vp-767 {
       margin: 0 0 32px;
+
       font-size: 78px;
       line-height: 78px;
     }
@@ -85,31 +94,35 @@
   }
 
   &__place {
+    order: -1;
     margin: 0 0 8px;
-    font-family: $ff-bebas;
+
     font-size: 49px;
     line-height: 59px;
+    font-family: $ff-bebas;
     letter-spacing: 0.03em;
-    order: -1;
 
     @include vp-1199 {
       margin: 0 0 3px;
+
       font-size: 34px;
       line-height: 41px;
     }
 
     @include vp-767 {
       margin: 0 0 9px;
+
       font-size: 28px;
       line-height: 34px;
     }
   }
 
   &__description {
-    width: 125px;
-    margin: 128px -36px 0 0;
     display: flex;
     flex-direction: column;
+    width: 125px;
+    margin: 128px -36px 0 0;
+
     font-size: 14px;
     line-height: 21px;
 
@@ -124,18 +137,20 @@
   }
 
   &__link {
-    margin-left: auto;
-    width: 233px;
-    min-height: 61px;
-    border: 4px solid $color-default-white;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
     justify-content: center;
     align-items: center;
     align-self: start;
+    width: 233px;
+    min-height: 61px;
+    margin-left: auto;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    border: 4px solid $color-default-white;
 
     @include vp-1199 {
       width: 186px;
@@ -148,13 +163,38 @@
   }
 
   &__social {
-    margin: 0 -10px 32px auto;
-    min-width: 100px;
-    justify-self: end;
     align-self: end;
+    min-width: 100px;
+    margin: 0 -10px 32px auto;
 
     @include vp-1199 {
       display: none;
     }
+
+    justify-self: end;
+  }
+
+  &__social-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    align-items: flex-start;
+    max-height: 200px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__social-link {
+    display: flex;
+    align-items: center;
+    min-width: 14px;
+    padding: 10px;
+
+    font-size: 12px;
+    line-height: 14px;
+    color: $color-default-white;
+    text-transform: uppercase;
   }
 }
