@@ -387,14 +387,6 @@ template {
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "Rouble";
-  font-display: swap;
-  src: url("../fonts/rouble.woff2") format("woff2"), url("../fonts/rouble.woff") format("woff");
-}
-
-@font-face {
-  font-style: normal;
-  font-weight: 400;
   font-family: "Bebas Neue";
   font-display: swap;
   src: url("../fonts/BebasNeueRegular.woff2") format("woff2"), url("../fonts/BebasNeueRegular.woff") format("woff");
@@ -995,6 +987,7 @@ button,
 
 .social {
   width: 135px;
+  min-width: 135px;
   margin-right: -18px;
 }
 
@@ -1092,17 +1085,9 @@ button,
 }
 
 .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   max-width: 500px;
   min-height: 44px;
   margin-left: 27px;
-  -webkit-column-gap: 20px;
-  -moz-column-gap: 20px;
-  column-gap: 20px;
 }
 
 .nav__list {
@@ -1112,7 +1097,7 @@ button,
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0;
+  padding: 10px 0 0;
   list-style: none;
   -webkit-column-gap: 20px;
   -moz-column-gap: 20px;
@@ -2608,12 +2593,6 @@ button,
     height: 18px;
   }
 
-  .nav {
-    -webkit-column-gap: 11px;
-    -moz-column-gap: 11px;
-    column-gap: 11px;
-  }
-
   .nav__list {
     -webkit-column-gap: 10px;
     -moz-column-gap: 10px;
@@ -3189,23 +3168,30 @@ button,
 
   .nav {
     width: 100%;
-    margin: -23px 0 0 -10px;
+    margin: -23px 0 10px -10px;
+  }
+
+  .nav__list {
+    padding: 0;
+    display: inline;
+    width: 100%;
+    -webkit-columns: 130px 2;
+    -moz-columns: 130px 2;
+    columns: 130px 2;
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 30px;
   }
 
-  .nav__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 130px;
-    margin-bottom: 21px;
-    row-gap: 11px;
+  .nav__item {
+    width: 100%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-bottom: 11px;
   }
 
-  .nav__list:first-of-type .nav__item:first-child {
+  .nav__item:first-child {
     margin-top: 40px;
   }
 

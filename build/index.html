@@ -11,7 +11,6 @@
     <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/BebasNeueRegular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/BebasNeueBold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/rouble.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -45,6 +44,7 @@
             <a class="intro__link btn" data-anchor href="#pass">Купить абонемент</a>
           </div>
           <div class="intro__image">
+            <!-- 1x: 500x556  2x: 1000x1112 -->
             <picture>
               <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/intro-tab.webp 1x, img/content/intro-tab@2x.webp 2x">
               <source type="image/webp" srcset="img/content/intro-desk.webp 1x, img/content/intro-desk@2x.webp 2x">
@@ -79,6 +79,7 @@
             </div>
             <div class="gym__image-wrapper">
               <div class="gym__image">
+                <!-- 1x: 660x401  2x: 1320x802 -->
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/content/gym-mob.webp 1x, img/content/gym-mob@2x.webp 2x">
                   <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/gym-tab.webp 1x, img/content/gym-tab@2x.webp 2x">
@@ -90,6 +91,7 @@
               </div>
               <div class="gym__video video">
                 <a class="gym__video-link" href="https://www.youtube.com/watch?v=9TZXsZItgdw" target="_blank">
+                  <!-- 1x: 364x228 2x: 728x456 -->
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)" srcset="img/content/video-img-mob.webp 1x, img/content/video-img-mob@2x.webp 2x">
                     <source type="image/webp" srcset="img/content/video-img-desk.webp 1x, img/content/video-img-desk@2x.webp 2x">
@@ -98,7 +100,9 @@
                   </picture>
                 </a>
                 <button class="gym__video-button btn" type="button" aria-label="Запустить видео">
+                  <!-- 1x: 100x100  2x: 200x200 -->
                   <picture>
+                    <source type="image/webp" srcset="img/content/play.webp 1x, img/content/play@2x.webp 2x">
                     <img src="img/content/play.png" srcset="img/content/play@2x.png 2x" alt="Запустить видео" width="100" height="100">
                   </picture>
                 </button>
@@ -109,6 +113,7 @@
         <section class="pass" id="pass">
           <div class="pass__container container">
             <div class="pass__bg">
+              <!-- 1x: 287x494  2x: 574x988 -->
               <picture>
                 <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/discs-tab.webp 1x, img/content/discs-tab@2x.webp 2x">
                 <source type="image/webp" srcset="img/content/discs-desk.webp 1x, img/content/discs-desk@2x.webp 2x">
@@ -275,6 +280,7 @@
                 <a class="promo__link btn" href="#">Заполнить заявку</a>
               </div>
               <div class="promo__image">
+                <!-- 1x: 660x500  2x: 1320x1000 -->
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/content/games-mob.webp 1x, img/content/games-mob@2x.webp 2x">
                   <source type="image/webp" srcset="img/content/games-desk.webp 1x, img/content/games-desk@2x.webp 2x">
@@ -294,6 +300,7 @@
                   <li class="trainers__item swiper-slide">
                     <p class="trainers__text">Анна Павлова</p>
                     <div class="trainers__image">
+                      <!-- 1x: 260x294  2x: 520x588 -->
                       <picture>
                         <source type="image/webp" srcset="img/content/anna-desk.webp 1x, img/content/anna-desk@2x.webp 2x">
                         <img src="img/content/anna-desk.jpg" srcset="img/content/anna-desk@2x.jpg 2x" width="260" height="294" alt="Анна Павлова">
@@ -306,11 +313,13 @@
                         <li class="trainers__progress-item">Сертификат Preksha International, India 2015</li>
                         <li class="trainers__progress-item">Организатор авторских туров в&nbsp;Крым</li>
                         <li class="trainers__progress-item">Опыт —  5&nbsp;лет</li>
+                      </ul>
                     </div>
                   </li>
                   <li class="trainers__item swiper-slide">
                     <p class="trainers__text">Алексей Лавров</p>
                     <div class="trainers__image">
+                      <!-- 1x: 260x294  2x: 520x588 -->
                       <picture>
                         <source type="image/webp" srcset="img/content/aleksey-desk.webp 1x, img/content/aleksey-desk@2x.webp 2x">
                         <img src="img/content/aleksey-desk.jpg" srcset="img/content/aleksey-desk@2x.jpg 2x" width="260" height="294" alt="Алексей Лавров">
@@ -329,10 +338,11 @@
                   <li class="trainers__item swiper-slide">
                     <p class="trainers__text">Александр&nbsp;Пашков</p>
                     <div class="trainers__image">
+                      <!-- 1x: 260x294  2x: 520x588 -->
                       <picture>
-                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/aleksander-tab.webp 1x, img/content/aleksander-tab@2x.webp">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/aleksander-tab.webp 1x, img/content/aleksander-tab@2x.webp 2x">
                         <source type="image/webp" srcset="img/content/aleksander-desk.webp 1x, img/content/aleksander-desk@2x.webp 2x">
-                        <source media="(max-width: 1199px)" srcset="img/content/aleksander-tab.jpg 1x, img/content/aleksander-tab@2x.jpg">
+                        <source media="(max-width: 1199px)" srcset="img/content/aleksander-tab.jpg 1x, img/content/aleksander-tab@2x.jpg 2x">
                         <img src="img/content/aleksander-desk.jpg" srcset="img/content/aleksander-desk@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
                       </picture>
                     </div>
@@ -349,13 +359,12 @@
                   <li class="trainers__item swiper-slide">
                     <p class="trainers__text">Мария Кетова</p>
                     <div class="trainers__image">
+                      <!-- 1x: 260x294  2x: 520x588 -->
                       <picture>
-                        <picture>
-                          <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/maria-tab.webp 1x, img/content/maria-tab@2x.webp 2x">
-                          <source type="image/webp" srcset="img/content/maria-desk.webp 1x, img/content/maria-desk@2x.webp 2x">
-                          <source media="(max-width: 1199px)" srcset="img/content/maria-tab.jpg 1x, img/content/maria-tab@2x.jpg 2x">
-                          <img src="img/content/maria-desk.jpg" srcset="img/content/maria-desk@2x.jpg 2x" width="260" height="294" alt="Мария Кетова">
-                        </picture>
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/maria-tab.webp 1x, img/content/maria-tab@2x.webp 2x">
+                        <source type="image/webp" srcset="img/content/maria-desk.webp 1x, img/content/maria-desk@2x.webp 2x">
+                        <source media="(max-width: 1199px)" srcset="img/content/maria-tab.jpg 1x, img/content/maria-tab@2x.jpg 2x">
+                        <img src="img/content/maria-desk.jpg" srcset="img/content/maria-desk@2x.jpg 2x" width="260" height="294" alt="Мария Кетова">
                       </picture>
                     </div>
                     <div class="trainers__info-wrapper">
@@ -371,6 +380,7 @@
                   <li class="trainers__item swiper-slide">
                     <p class="trainers__text">Анна Павлова</p>
                     <div class="trainers__image">
+                      <!-- 1x: 260x294  2x: 520x588 -->
                       <picture>
                         <source type="image/webp" srcset="img/content/anna-desk.webp 1x, img/content/anna-desk@2x.webp 2x">
                         <img src="img/content/anna-desk.jpg" srcset="img/content/anna-desk@2x.jpg 2x" width="260" height="294" alt="Анна Павлова">
@@ -383,11 +393,13 @@
                         <li class="trainers__progress-item">Сертификат Preksha International, India 2015</li>
                         <li class="trainers__progress-item">Организатор авторских туров в&nbsp;Крым</li>
                         <li class="trainers__progress-item">Опыт —  5&nbsp;лет</li>
+                      </ul>
                     </div>
                   </li>
                   <li class="trainers__item swiper-slide">
                     <p class="trainers__text">Алексей Лавров</p>
                     <div class="trainers__image">
+                      <!-- 1x: 260x294  2x: 520x588 -->
                       <picture>
                         <source type="image/webp" srcset="img/content/aleksey-desk.webp 1x, img/content/aleksey-desk@2x.webp 2x">
                         <img src="img/content/aleksey-desk.jpg" srcset="img/content/aleksey-desk@2x.jpg 2x" width="260" height="294" alt="Алексей Лавров">
@@ -406,10 +418,11 @@
                   <li class="trainers__item swiper-slide">
                     <p class="trainers__text">Александр&nbsp;Пашков</p>
                     <div class="trainers__image">
+                      <!-- 1x: 260x294  2x: 520x588 -->
                       <picture>
-                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/aleksander-tab.webp 1x, img/content/aleksander-tab@2x.webp">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/aleksander-tab.webp 1x, img/content/aleksander-tab@2x.webp 2x">
                         <source type="image/webp" srcset="img/content/aleksander-desk.webp 1x, img/content/aleksander-desk@2x.webp 2x">
-                        <source media="(max-width: 1199px)" srcset="img/content/aleksander-tab.jpg 1x, img/content/aleksander-tab@2x.jpg">
+                        <source media="(max-width: 1199px)" srcset="img/content/aleksander-tab.jpg 1x, img/content/aleksander-tab@2x.jpg 2x">
                         <img src="img/content/aleksander-desk.jpg" srcset="img/content/aleksander-desk@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
                       </picture>
                     </div>
@@ -426,13 +439,12 @@
                   <li class="trainers__item swiper-slide">
                     <p class="trainers__text">Мария Кетова</p>
                     <div class="trainers__image">
+                      <!-- 1x: 260x294  2x: 520x588 -->
                       <picture>
-                        <picture>
-                          <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/maria-tab.webp 1x, img/content/maria-tab@2x.webp 2x">
-                          <source type="image/webp" srcset="img/content/maria-desk.webp 1x, img/content/maria-desk@2x.webp 2x">
-                          <source media="(max-width: 1199px)" srcset="img/content/maria-tab.jpg 1x, img/content/maria-tab@2x.jpg 2x">
-                          <img src="img/content/maria-desk.jpg" srcset="img/content/maria-desk@2x.jpg 2x" width="260" height="294" alt="Мария Кетова">
-                        </picture>
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/maria-tab.webp 1x, img/content/maria-tab@2x.webp 2x">
+                        <source type="image/webp" srcset="img/content/maria-desk.webp 1x, img/content/maria-desk@2x.webp 2x">
+                        <source media="(max-width: 1199px)" srcset="img/content/maria-tab.jpg 1x, img/content/maria-tab@2x.jpg 2x">
+                        <img src="img/content/maria-desk.jpg" srcset="img/content/maria-desk@2x.jpg 2x" width="260" height="294" alt="Мария Кетова">
                       </picture>
                     </div>
                     <div class="trainers__info-wrapper">
@@ -527,6 +539,7 @@
                     <a class="sale__link btn" href="#">Подробнее</a>
                   </div>
                   <div class="sale__image">
+                    <!-- 1x: 280x462  2x: 560x524 -->
                     <picture>
                       <source type="image/webp" media="(max-width: 767px)" srcset="img/content/promo-mob.webp 1x, img/content/promo-mob@2x.webp 2x">
                       <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/promo-tab.webp 1x, img/content/promo-tab@2x.webp 2x">
@@ -564,6 +577,7 @@
                   <li class="reviews__item swiper-slide">
                     <h3 class="reviews__author">Анна Орлова</h3>
                     <div class="reviews__userpic">
+                      <!-- 1x: 80x80  2x: 160x160 -->
                       <picture>
                         <source type="image/webp" srcset="img/content/userpic-desk.webp 1x, img/content/userpic-desk@2x.webp 2x">
                         <img src="img/content/userpic-desk.png" alt="Анна Орлова" srcset="img/content/userpic-desk@2x.png 2x" width="80" height="80">
@@ -574,6 +588,7 @@
                   <li class="reviews__item swiper-slide">
                     <h3 class="reviews__author">Анна Орлова</h3>
                     <div class="reviews__userpic">
+                      <!-- 1x: 80x80  2x: 160x160 -->
                       <picture>
                         <source type="image/webp" srcset="img/content/userpic-desk.webp 1x, img/content/userpic-desk@2x.webp 2x">
                         <img src="img/content/userpic-desk.png" alt="Анна Орлова" srcset="img/content/userpic-desk@2x.png 2x" width="80" height="80">
@@ -584,12 +599,12 @@
                 </ul>
               </div>
               <button class="reviews__btn reviews__btn--prev swiper-button-prev btn" type="button" aria-label="Предыдущий слайд">
-                <svg class="trainers__arrow" width="16" height="32">
+                <svg class="reviews__arrow" width="16" height="32">
                   <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
                 </svg>
               </button>
               <button class="reviews__btn reviews__btn--next swiper-button-next btn" type="button" aria-label="Следующий слайд">
-                <svg class="trainers__arrow" width="16" height="32">
+                <svg class="reviews__arrow" width="16" height="32">
                   <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
                 </svg>
               </button>
@@ -641,7 +656,7 @@
       <footer class="footer">
         <div class="footer__container container">
           <a class="footer__logo" href="#header" data-anchor>
-            <svg class="header__logo" width="89" height="20">
+            <svg width="89" height="20">
               <use xlink:href="img/sprite_auto.svg#logo"></use>
             </svg>
           </a>
@@ -653,8 +668,6 @@
               <li class="nav__item">
                 <a class="nav__link" href="#pass" data-anchor>Абонементы</a>
               </li>
-            </ul>
-            <ul class="nav__list">
               <li class="nav__item">
                 <a class="nav__link" href="#sale" data-anchor>Акции</a>
               </li>

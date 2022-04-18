@@ -1,5 +1,6 @@
 .social {
   width: 135px;
+  min-width: 135px;
   margin-right: -18px;
 
   @include vp-1199 {
