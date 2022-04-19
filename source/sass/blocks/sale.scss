@@ -1,12 +1,12 @@
 .sale {
-  padding: 118px 0 60px;
+  padding: 119px 0 60px;
 
   @include vp-1199 {
     padding: 99px 0 50px;
   }
 
   @include vp-767 {
-    padding: 69px 0 30px;
+    padding: 70px 0 30px;
   }
 
   &__title {
@@ -82,6 +82,7 @@
     padding: 34px 34px 36px;
 
     @include vp-1199 {
+      min-width: 279px;
       padding: 34px 33px 36px 35px;
     }
 

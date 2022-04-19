@@ -33,7 +33,7 @@
         <div class="intro__container container">
           <div class="intro__wrapper">
             <div class="intro__title-wrapper">
-              <h2 class="intro__title title">Фитнес <span>центр</span></h2>
+              <h1 class="intro__title title">Фитнес <span>центр</span></h1>
               <p class="intro__description">
                 <span>Тренажёрный зал</span>
                 <span>Групповые занятия</span>
@@ -52,7 +52,7 @@
               <img src="img/content/intro-desk.jpg" srcset="img/content/intro-desk@2x.jpg 2x" alt="Фитнес центр" width="500" height="556">
             </picture>
           </div>
-          <div class="intro__social social">
+          <div class="intro__social">
             <ul class="intro__social-list">
               <li class="intro__social-item">
                 <a class="intro__social-link" href="#" target="_blank" aria-label="Наша страница на Facebook">Fb</a>
@@ -68,7 +68,6 @@
         </div>
       </section>
       <main>
-        <h1 class="visually-hidden">Фитнес-центр Supergym</h1>
         <section class="gym">
           <div class="gym__container container">
             <div class="gym__text-wrapper">
@@ -113,12 +112,12 @@
         <section class="pass" id="pass">
           <div class="pass__container container">
             <div class="pass__bg">
-              <!-- 1x: 287x494  2x: 574x988 -->
+              <!-- 1x: 287x494  2x: 940x988 -->
               <picture>
                 <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/discs-tab.webp 1x, img/content/discs-tab@2x.webp 2x">
                 <source type="image/webp" srcset="img/content/discs-desk.webp 1x, img/content/discs-desk@2x.webp 2x">
                 <source media="(max-width: 1199px)" srcset="img/content/discs-tab.jpg 1x, img/content/discs-tab@2x.jpg 2x">
-                <img src="img/content/discs-desk.jpg" srcset="img/content/discs-desk@2x.jpg 2x" alt="Тренажерный зал" width="287" height="494">
+                <img src="img/content/discs-desk.jpg" srcset="img/content/discs-desk@2x.jpg 2x" alt="Тренажерный зал" width="470" height="494">
               </picture>
             </div>
             <h2 class="pass__title title">Абонементы</h2>
@@ -340,8 +339,10 @@
                     <div class="trainers__image">
                       <!-- 1x: 260x294  2x: 520x588 -->
                       <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/content/aleksander-mob.webp 1x, img/content/aleksander-mob@2x.webp 2x">
                         <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/aleksander-tab.webp 1x, img/content/aleksander-tab@2x.webp 2x">
                         <source type="image/webp" srcset="img/content/aleksander-desk.webp 1x, img/content/aleksander-desk@2x.webp 2x">
+                        <source media="(max-width: 767px)" srcset="img/content/aleksander-mob.jpg 1x, img/content/aleksander-mob@2x.jpg 2x">
                         <source media="(max-width: 1199px)" srcset="img/content/aleksander-tab.jpg 1x, img/content/aleksander-tab@2x.jpg 2x">
                         <img src="img/content/aleksander-desk.jpg" srcset="img/content/aleksander-desk@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
                       </picture>
@@ -420,8 +421,10 @@
                     <div class="trainers__image">
                       <!-- 1x: 260x294  2x: 520x588 -->
                       <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/content/aleksander-mob.webp 1x, img/content/aleksander-mob@2x.webp 2x">
                         <source type="image/webp" media="(max-width: 1199px)" srcset="img/content/aleksander-tab.webp 1x, img/content/aleksander-tab@2x.webp 2x">
                         <source type="image/webp" srcset="img/content/aleksander-desk.webp 1x, img/content/aleksander-desk@2x.webp 2x">
+                        <source media="(max-width: 767px)" srcset="img/content/aleksander-mob.jpg 1x, img/content/aleksander-mob@2x.jpg 2x">
                         <source media="(max-width: 1199px)" srcset="img/content/aleksander-tab.jpg 1x, img/content/aleksander-tab@2x.jpg 2x">
                         <img src="img/content/aleksander-desk.jpg" srcset="img/content/aleksander-desk@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
                       </picture>
@@ -476,7 +479,7 @@
           <div class="advantages__container container">
             <h2 class="advantages__title title">Наши преимущества</h2>
             <ul class="advantages__list">
-              <li class="advantages__item advantages__item--static">
+              <li class="advantages__item">
                 <div class="advantages__text-wrapper">
                   <h3 class="advantages__item-title"><span>100</span> Тренажеров</h3>
                   <p class="advantages__text">Современные тренажеры на&nbsp;все группы мышц</p>
@@ -611,46 +614,48 @@
             </div>
           </div>
         </section>
-        <div class="bottom-wrapper container">
-          <section class="callback">
-            <h2 class="callback__title title">Бесплатное занятие</h2>
-            <div data-validate>
-              <form action="https://echo.htmlacademy.ru/" method="POST" id="callback-form">
-                <label for="user-name" data-validate-type="text" data-limitations="letters">
-                  <input type="text" name="user-name" id="user-name" maxlength="100" placeholder="Имя" required>
-                </label>
-                <label for="user-phone" data-validate-type="phone">
-                  <input type="tel" name="user-phone" id="user-phone" placeholder="Телефон" required>
-                </label>
-                <button class="callback__button btn" type="submit">Отправить</button>
-              </form>
-            </div>
-          </section>
-          <section class="contacts">
-            <h2 class="contacts__title title">Контакты</h2>
-            <div class="contacts__wrapper">
-              <ul class="contacts__list">
-                <li class="contacts__item">
-                  <h3 class="contacts__item-title">Адрес:</h3>
-                  <p class="contacts__text">г. Омск, ул.&nbsp;60&nbsp;лет Октября,&nbsp;7</p>
-                </li>
-                <li class="contacts__item">
-                  <h3 class="contacts__item-title">График работы:</h3>
-                  <p class="contacts__text">Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</p>
-                </li>
-              </ul>
-              <ul class="contacts__list">
-                <li class="contacts__item">
-                  <h3 class="contacts__item-title">Телефон:</h3>
-                  <p class="contacts__text">8-800-555-55-55</p>
-                </li>
-                <li class="contacts__item">
-                  <h3 class="contacts__item-title">Email:</h3>
-                  <p class="contacts__text">omsk@supergym.ru</p>
-                </li>
-              </ul>
-            </div>
-          </section>
+        <div class="bottom-wrapper">
+          <div class="bottom-wrapper__container container">
+            <section class="callback">
+              <h2 class="callback__title title">Бесплатное занятие</h2>
+              <div data-validate>
+                <form action="https://echo.htmlacademy.ru/" method="POST" id="callback-form">
+                  <div data-validate-type="text" data-limitations="letters">
+                    <input type="text" name="user-name" id="user-name" maxlength="100" placeholder="Имя" aria-label="Имя" required>
+                  </div>
+                  <div data-validate-type="phone">
+                    <input type="tel" name="user-phone" id="user-phone" placeholder="Телефон" aria-label="Телефон" required>
+                  </div>
+                  <button class="callback__button btn" type="submit">Отправить</button>
+                </form>
+              </div>
+            </section>
+            <section class="contacts">
+              <h2 class="contacts__title title">Контакты</h2>
+              <div class="contacts__wrapper">
+                <ul class="contacts__list">
+                  <li class="contacts__item">
+                    <h3 class="contacts__item-title">Адрес:</h3>
+                    <p class="contacts__text">г. Омск, ул.&nbsp;60&nbsp;лет Октября,&nbsp;7</p>
+                  </li>
+                  <li class="contacts__item">
+                    <h3 class="contacts__item-title">График работы:</h3>
+                    <p class="contacts__text">Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</p>
+                  </li>
+                </ul>
+                <ul class="contacts__list">
+                  <li class="contacts__item">
+                    <h3 class="contacts__item-title">Телефон:</h3>
+                    <a class="contacts__link" href="tel:+78005555555" aria-label="Телефон для связи">8-800-555-55-55</a>
+                  </li>
+                  <li class="contacts__item">
+                    <h3 class="contacts__item-title">Email:</h3>
+                    <a class="contacts__link" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
         </div>
       </main>
       <footer class="footer">

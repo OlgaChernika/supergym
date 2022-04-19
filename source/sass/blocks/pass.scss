@@ -17,10 +17,11 @@
 
   &__bg {
     position: absolute;
-    right: 0;
+    right: -183px;
     bottom: -229px;
 
     @include vp-1199 {
+      right: 0;
       bottom: -185px;
     }
 
@@ -30,7 +31,7 @@
   }
 
   &__bg img {
-    width: 287px;
+    width: 470px;
 
     @include vp-1199 {
       width: 347px;
@@ -64,7 +65,7 @@
     z-index: 1;
 
     display: grid;
-    width: 35%;
+    width: 31%;
     margin-bottom: 40px;
     padding: 63px 40px 68px;
 
@@ -155,7 +156,7 @@
     color: $color-egyptian-blue;
 
     @include vp-767 {
-      margin: 0 0 31px 3px;
+      margin: 0 0 31px 2px;
 
       font-size: 48px;
       line-height: 72px;

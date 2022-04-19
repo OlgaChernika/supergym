@@ -1,4 +1,22 @@
 .communications {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: 700px;
+
+  column-gap: 15px;
+  row-gap: 10px;
+
+  @include vp-1199 {
+    max-width: 500px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+
+    gap: 5px;
+  }
+
   &__link {
     color: $color-default-white;
 

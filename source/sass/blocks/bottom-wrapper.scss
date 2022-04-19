@@ -1,27 +1,31 @@
 .bottom-wrapper {
   position: relative;
-
-  display: flex;
-  justify-content: center;
+  overflow: hidden;
 
   &::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
 
     width: 100vw;
     height: 1px;
 
     background-color: $color-light-slate-grey;
+    z-index: -1;
 
     @include vp-1199 {
       display: none;
     }
   }
 
-  @include vp-1199 {
-    flex-direction: column;
-    overflow: hidden;
+  &__container {
+    display: flex;
+    justify-content: center;
+
+    @include vp-1199 {
+      flex-direction: column;
+    }
   }
 }

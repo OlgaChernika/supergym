@@ -132,7 +132,7 @@
     }
 
     @include vp-767 {
-      margin: 80px -37px 0 0;
+      margin: 81px -37px 0 0;
     }
   }
 
@@ -157,15 +157,17 @@
     }
 
     @include vp-767 {
-      width: 290px;
+      width: calc(100% + 6px);
+      max-width: 295px;
       min-height: 63px;
+      margin-left: -3px;
     }
   }
 
   &__social {
     align-self: end;
     min-width: 100px;
-    margin: 0 -10px 32px auto;
+    margin: 0 -10px 36px auto;
 
     @include vp-1199 {
       display: none;
@@ -182,6 +184,7 @@
     max-height: 200px;
     margin: 0;
     padding: 0;
+    row-gap: 10px;
 
     list-style: none;
   }
@@ -190,11 +193,18 @@
     display: flex;
     align-items: center;
     min-width: 14px;
-    padding: 10px;
+    padding: 5px 10px;
 
     font-size: 12px;
     line-height: 14px;
     color: $color-default-white;
     text-transform: uppercase;
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        opacity: 0.6;
+      }
+    }
   }
 }

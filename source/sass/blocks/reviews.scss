@@ -10,7 +10,7 @@
   }
 
   &__title {
-    margin: 0 0 51px;
+    margin: 0 0 52px;
 
     text-align: center;
 
@@ -66,10 +66,10 @@
   &__item {
     display: grid;
     min-width: 560px;
-    padding: 60px 60px 37px 62px;
+    padding: 59px 60px 39px 62px;
 
     color: $color-default-white;
-    column-gap: 30px;
+    column-gap: 28px;
 
     background-color: $color-resolution-blue;
 
@@ -78,6 +78,7 @@
 
     @include vp-1199 {
       min-width: 566px;
+      padding: 58px 60px 41px 65px;
     }
 
     @include vp-767 {
@@ -94,7 +95,7 @@
   }
 
   &__author {
-    margin: 0 0 12px;
+    margin: 0 0 16px;
 
     font-weight: 700;
     font-size: 20px;
@@ -110,16 +111,21 @@
   &__userpic {
     align-content: start;
     width: 80px;
-    padding-top: 2px;
+    padding-top: 3px;
 
     border-radius: 50%;
 
     grid-column: 1/2;
     grid-row: 1/-1;
 
+    @include vp-1199 {
+      padding-top: 4px;
+    }
+
     @include vp-767 {
       width: 68px;
       margin-left: auto;
+      padding-top: 2px;
 
       grid-row: 1/2;
     }
@@ -136,9 +142,10 @@
 
     grid-column: 2/3;
 
+    font-size: 16px;
+    line-height: 22.5px;
+
     @include vp-767 {
-      font-size: 16px;
-      line-height: 22.5px;
       text-align: center;
 
       grid-column: 1/-1;
