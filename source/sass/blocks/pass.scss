@@ -106,20 +106,18 @@
       transition: opacity $trans-default;
     }
 
-    @media (hover: hover), screen and (min-width: 0\0) {
-      &:hover {
+    &:hover {
+      &::before {
+        opacity: 1;
+      }
+
+      .pass__link {
+        color: $color-default-white;
+
+        border: none;
+
         &::before {
           opacity: 1;
-        }
-
-        .pass__link {
-          color: $color-default-white;
-
-          border: none;
-
-          &::before {
-            opacity: 1;
-          }
         }
       }
     }

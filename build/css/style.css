@@ -662,6 +662,10 @@ button,
   background-color: rgba(255, 255, 255, 0);
   border: none;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
@@ -1318,6 +1322,19 @@ button,
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
+}
+
+.pass__item:hover::before {
+  opacity: 1;
+}
+
+.pass__item:hover .pass__link {
+  color: #ffffff;
+  border: none;
+}
+
+.pass__item:hover .pass__link::before {
+  opacity: 1;
 }
 
 .pass__label {
@@ -2471,6 +2488,9 @@ button,
 }
 
 .contacts__link {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2533,19 +2553,6 @@ button,
     -webkit-transform: translate(-50%, -50%) scale(1.1);
     -ms-transform: translate(-50%, -50%) scale(1.1);
     transform: translate(-50%, -50%) scale(1.1);
-    opacity: 1;
-  }
-
-  .pass__item:hover::before {
-    opacity: 1;
-  }
-
-  .pass__item:hover .pass__link {
-    color: #ffffff;
-    border: none;
-  }
-
-  .pass__item:hover .pass__link::before {
     opacity: 1;
   }
 

@@ -2,6 +2,8 @@ export const initSwiperTrainers = () => {
   const swiper = new window.Swiper('.swiper-trainers', {
     slidesPerView: 4,
     spaceBetween: 40,
+    loop: true,
+    loopFillGroupWithBlank: true,
 
     breakpoints: {
       320: {
